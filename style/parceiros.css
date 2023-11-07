@@ -40,8 +40,20 @@
 
 @keyframes palavras{
 
+  0%, 20%{
+    content: "Google";
+  }
   21%, 40%{
     content: "Instagram";
+  }
+  41%, 60%{
+    content: "Facebook";
+  }
+  61%, 80%{
+    content: "YouTube";
+  }
+  81%, 100%{
+    content: " TikTok";
   }
 
 }
