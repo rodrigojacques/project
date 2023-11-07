@@ -97,9 +97,7 @@ form .btn img {
 
 @media (max-width: 780px) {
   .s-contato{
-    padding: 0px;
+    min-height: 100vh;
   }
-  .container-form {
-    padding: 20px 0;
-  }
+
 }

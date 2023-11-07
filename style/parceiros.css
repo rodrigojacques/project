@@ -39,21 +39,11 @@
 }
 
 @keyframes palavras{
-  0%, 20%{
-    content: "Google";
-  }
+
   21%, 40%{
     content: "Instagram";
   }
-  41%, 60%{
-    content: "Facebook";
-  }
-  61%, 80%{
-    content: "YouTube";
-  }
-  81%, 100%{
-    content: " TikTok";
-  }
+
 }
 
 .txt-animado span::after{
@@ -118,6 +108,10 @@
 }
 
 @media (max-width: 780px){
+  .s-parceiros{
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
   .parceiros-box {
     display: flex;
     flex-wrap: wrap;
@@ -133,8 +127,12 @@
 }
 
 @media (max-width: 540px){
+  .s-parceiros{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .parceiros-text span{
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
   }
 
