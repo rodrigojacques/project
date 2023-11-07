@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link rel="stylesheet" href="style/general.css">
+  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/home.css">
+  <link rel="stylesheet" href="style/parceiros.css">
+  <link rel="stylesheet" href="style/service.css">
+  <link rel="stylesheet" href="style/contato.css">
+  <link rel="stylesheet" href="style/faq.css">
+  <link rel="stylesheet" href="style/footer.css">
+
+  <!---- box icons link ---->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!---- remix icons link ---->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!---- google fonts link ---->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/particles.js" defer></script>
+  <script src="js/app.js" defer></script>
+
+
+  <script defer>
+
+    const changeThemeToDark = () => {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('data-theme', 'dark')
+    }
+    const changeThemeToLight = () => {
+      document.documentElement.setAttribute('data-theme', 'light')
+      localStorage.setItem('data-theme', 'light')
+    }
+    let theme = localStorage.getItem('data-theme')
+    if (theme == 'light') changeThemeToLight
+
+  </script>
+</head>
+
+<body>
+  <div id="particles-js">
+  </div>
+  <!--- header -->
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="" alt="">LOGO
+    </a>
+
+    <ul class="navlist">
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#service">O que fazemos?</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="blog.html">blog</a></li>
+    </ul>
+
+    <div class="h-right">
+      <input type="checkbox" name="toggle-dark" id="toggle-light" class="toggle-theme">
+      <label for="toggle-light">
+        <i class="ri-moon-fill"></i>
+        <i class="ri-sun-fill"></i>
+      </label>
+
+      <a href="#contato">Fale conosco</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+    
+  </header>
+  
+
+  <!--- home section --->
+  <section id="home" class="s-home">
+
+
+
+    <div class="left-box">
+      <div class="home-text delay-small">
+        <span>
+          Marketing Digital
+        </span>
+        <h1>
+          Alavanque seu negócio<br> com anúncios online
+        </h1>
+        <p>
+          No matter where you are, with a growing library of experience there is no limit.
+        </p>
+      </div>
+
+      <div class="link-box ">
+        <div class="icones">
+          <a href="" class="small-delay"><i class="ri-facebook-box-line"></i></a>
+          <a href="" class="small-delay"><i class="ri-instagram-line"></i></a>
+          <a href="" class="small-delay"><i class="ri-tiktok-line"></i></a>
+          <a href="" class="small-delay"><i class="ri-youtube-line"></i></a>
+        </div>
+        <div class="delay-small">
+          <a href="#contato"" class=" btn">Converse com um especialista</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="home-img delay-extra-big">
+      <img src="img/image.png" alt="">
+    </div>
+
+    <div class="scroll-icon-box delay-extra-big">
+      <a href="#service">
+        <i class='bx bx-mouse'></i>
+      </a>
+    </div>
+
+  </section>
+
+  <!--parceiros-->
+  <section id="parceiros" class="s-parceiros">
+    <div class="parceiros-text">
+      <h3 class="txt-animado">Anuncie sua empresa no <span></span></h3>
+    </div>
+
+
+    <div class="parceiros-box">
+      <div class="parceiro">
+        <img src="/img/google ads.png" alt="">
+      </div>
+      <div class="parceiro meta">
+        <img src="/img/meta.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!--- service section--->
+  <section id="service" class="s-service">
+
+    <h2 class="title delay-small">O que fazemos?
+    </h2>
+    <div class="service-box">
+
+      <article class="card-box delay-extra-big">
+        <div class="card-image"><img src="img/anuncio.png" alt=""></div>
+        <div class="card-texto">
+          <h3 class="title"><em>Anúncio</em></h3>
+          <p>Construimos campanhas de marketing eficazes, apresentamos a sua empresa ao público-alvo ideal para aumentar
+            o seu número de clientes e impulsionar o crescimento do seu negócio.</p>
+        </div>
+      </article>
+
+      <article class="card-box delay-extra-big">
+        <div class="card-image"><img src="img/otimizar.png" alt=""></div>
+        <div class="card-texto">
+          <h3 class="title"><em>Otimização</em></h3>
+          <p>Através dos dados de conversões, vamos otimizar suas campanhas diariamente para conseguir obter cada vez
+            mais resultados com o menor custo. Dessa forma podemos aumentar os investimentos para sua empresa crescer
+            cada vez mais, multiplicando o seu faturamento.</p>
+        </div>
+      </article>
+
+      <article class="card-box delay-extra-big">
+        <div class="card-image"><img src="img/remarketing.png" alt=""></div>
+        <div class="card-texto">
+          <h3 class="title"><em>Remarketing</em></h3>
+          <p>Usando os dados de suas conversões, vamos mostrar os anúncios novamente para as pessoas que acessaram o site.
+            Também iremos encontrar pessoas interessadas em seus produtos no Facebook, Instagram, TikTok e
+            todas as segmentações da plataforma do Google (Display, Youtube, Maps)</p>
+        </div>
+      </article>
+
+      <article class="card-box delay-extra-big">
+        <div class="card-image"><img src="img/website.png" alt=""></div>
+        <div class="card-texto">
+          <h3 class="title"><em>Website</em></h3>
+          <p>Criamos sites profissionais, rapidos e com designe moderno. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Consequatur, amet. </p>
+        </div>
+      </article>
+
+      <article class="card-box delay-extra-big">
+        <div class="card-image"><img src="img/relatorio.png" alt=""></div>
+        <div class="card-texto">
+          <h3 class="title"><em>Relatório</em>
+          </h3>
+          <p>Você vai ter acesso aos dados de suas campanhas em tempo real, através do relatório que vai ser
+            disponibilizado dentro do painel do cliente. Acesso a cliques, gastos, conversões etc...</p>
+        </div>
+      </article>
+
+      <article class="card-box  delay-extra-big">
+        <div class="card-image"><img src="img/suporte.png" alt=""></div>
+        <div class="card-texto">
+          <h3 class="title"><em>Suporte</em></h3>
+          <p>A partir do momento que começamos a cuidar de suas campanhas, vai ser criado um grupo no WhatsApp para você
+            dar feedbacks e tirar dúvidas sempre que precisar.</p>
+        </div>
+      </article>
+    </div>
+    <a class="btn" href="#contato">Faça um orçamento</a>
+  </section>
+
+  <!---  contato section--->
+  <section id="contato" class="s-contato">
+
+    <div class="form-box">
+      <h3 class="title">Contate-nos</h3>
+      <form>
+        <div class="row-input delay-small">
+          <div class="input-box">
+            <input type="text" id="name" required>
+            <label for="name"><i class="ri-user-fill"></i> Nome *</label>
+          </div>
+          <div class="input-box">
+            <input type="tel" id="number" required>
+            <label for="number"><i class="ri-phone-fill"></i> Telefone *</label>
+          </div>
+        </div>
+        <div class="input-box delay-small">
+          <input type="text" id="email" required>
+          <label for="email"><i class="ri-mail-fill"></i> Email *</label>
+        </div>
+        <div class="input-box delay-small">
+          <textarea id="mensagem" rows="8" required></textarea>
+          <label for="mensagem"><i class="ri-question-answer-fill"></i> Sua mensagem...</label>
+        </div>
+
+        <button type="submit" class="btn delay-small">Enviar <img src="img/icons/aviao.png" alt=""></button>
+
+      </form>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- faq section-->
+<section class="s-faq">
+  <h3 class="title">Perguntas frequentes</h3>
+
+  <div class="container-faq">
+    <div class="faq-cta">
+      <p>Caso ainda tenha duvidas fale conosco pelo whatsapp, temos especialistas prontos para lhe ajudar.</p>
+      <a><button class="btn">Whatsapp</button></a>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <button class="toggle">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit?
+          <i class="faq-icon ri-add-line"></i>
+        </button>
+        <div class="content">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolore aliquid cum. Accusamus, asperiores eligendi?</p>
+        </div>
+      </div>
+      <div class="wrapper">
+        <button class="toggle">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit?
+          <i class="faq-icon ri-add-line"></i>
+        </button>
+        <div class="content">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolore aliquid cum. Accusamus, asperiores eligendi?</p>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <button class="toggle">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit?
+          <i class="faq-icon ri-add-line"></i>
+        </button>
+        <div class="content">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolore aliquid cum. Accusamus, asperiores eligendi?</p>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <button class="toggle">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit?
+          <i class="faq-icon ri-add-line"></i>
+        </button>
+        <div class="content">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolore aliquid cum. Accusamus, asperiores eligendi?</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!---  footer section--->
+  <section id="footer" class="footer">
+    <div class="footer-box">
+      <a href="#" class="footer-logo"></a>
+      <ul class="footer-menu">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <a href="#service">O que fazemos</a>
+        </li>
+        <a href="#contato">Contato</a>
+        </li>
+      </ul>
+      <ul class="footer-icons">
+        <li>
+          <i class="ri-google-fill"></i>
+        </li>
+        <li>
+          <i class="ri-facebook-box-fill"></i>
+        </li>
+        <li>
+          <i class="ri-instagram-fill"></i>
+        </li>
+        <li>
+          <i class="ri-youtube-fill"></i>
+        </li>
+        <li>
+          <i class="ri-tiktok-fill"></i>
+        </li>
+      </ul>
+      <p>Copyright © 2023. Todos os direitos reservados.</p>
+    </div>
+
+  </section>
+
+  <a href="https://api.whatsapp.com/send?phone=48123456789" width="70px" class="btn-whatsapp" target="_blank" title="Quero falar com o atendimento">
+    <img src="img/btn-whatsapp.png" alt="whatsapp">
+  </a>
+
+</body>
+
+</html>

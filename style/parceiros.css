@@ -1,0 +1,163 @@
+.s-parceiros{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--parceiro-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.parceiros-text h3{
+  color: var(--p-color);
+  font-size: 40px;
+}
+
+.parceiros-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parceiro img{
+  width: 200px;
+}
+.meta img{
+  width: 250px;
+}
+
+.txt-animado span{
+  position: relative;
+}
+
+.txt-animado span::before{
+  content:"";
+  color: var(--main-color);
+  animation: palavras 20s infinite;
+}
+
+@keyframes palavras{
+  0%, 20%{
+    content: "Google";
+  }
+  21%, 40%{
+    content: "Instagram";
+  }
+  41%, 60%{
+    content: "Facebook";
+  }
+  61%, 80%{
+    content: "YouTube";
+  }
+  81%, 100%{
+    content: " TikTok";
+  }
+}
+
+.txt-animado span::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-left: 2px solid var(--main-color);
+  right: -10px;
+  animation: cursor .8s infinite, escrever 20s steps(12) infinite;
+  width: calc(100% + 10px);
+  background-color: var(--bg-color);
+}
+
+@keyframes cursor {
+  0%{
+    border-left: 2px solid var(--card-color);
+  }
+
+}
+
+@keyframes escrever {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+    width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+    width: calc(100% + 10px);
+  }
+}
+
+
+
+/*RESPONSIVE*/
+@media (max-width: 1820px) {
+
+}
+
+@media (max-width: 1610px){
+
+
+  .parceiros-text h3{
+    font-size: 35px;
+  }
+}
+@media (max-width: 1490px){
+
+
+  .parceiros-text h3{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1180px){
+
+
+  .parceiros-box{
+    gap: 25px;
+  }
+
+  .parceiro i{
+    font-size: 60px;
+  }
+  .parceiros-text h3{
+    font-size: 25px;
+  }
+
+}
+
+@media (max-width: 950px){
+  .s-parceiros{
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 780px){
+
+  .parceiros-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .parceiro img{
+    width: 150px;
+  }
+  .meta img{
+    width: 200px;
+  }
+ 
+
+}
+
+@media (max-width: 540px){
+ 
+  .parceiros-text h3{
+    font-size: 24px;
+    text-align: center;
+  }
+
+
+
+  .parceiro img{
+    width: 120px;
+  }
+  .meta img{
+    width: 160px;
+  }
+
+ 
+}

@@ -1,0 +1,113 @@
+.s-contato{
+  background-color: var(--contato-color);
+  padding:50px;
+}
+
+.form-box{
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 0;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+form{
+  width: 90%;
+  text-align: center;
+}
+
+.input-box{
+  margin-bottom: 30px;
+  position: relative;
+  
+}
+
+.form-box input, .form-box textarea{
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+
+  color: var(--text-color);
+  background-color: transparent;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
+}
+
+.form-box label{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: var(--p-color);
+  cursor: text;
+  transition: 0.2s;
+}
+
+form .btn img{
+  filter: var(--invert-1);
+}
+
+
+.form-box input:focus,
+.form-box textarea:focus{
+  background-color: var(--inputhover-color);
+  transition: 1s;
+}
+
+
+.form-box input:valid,
+.form-box textarea:valid{
+  background-color: var(--inputhover-color);
+}
+
+.form-box input:focus~label,
+.form-box input:valid~label,
+.form-box textarea:focus~label,
+.form-box textarea:valid~label{
+
+  top: -35px;
+  font-size: 14px;
+
+}
+
+.row-input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row-input .input-box{
+  flex-basis: 48%;
+}
+
+
+
+@media (max-width: 1490px){
+  .form-box{
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 1180px){
+  .form-box{
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 780px){
+
+  .form-box{
+    padding: 30px 0;
+  }
+
+}
