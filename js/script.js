@@ -82,27 +82,27 @@ list.forEach((i) =>
 /* faq selecionado*/
 
 let toggles = document.getElementsByClassName('toggle');
-let contentDiv = document.getElementsByClassName('content');
+let responseDiv = document.getElementsByClassName('response');
 let icons = document.getElementsByClassName('faq-icon');
 
 for (let i = 0; i < toggles.length; i++) {
   toggles[i].addEventListener('click', () => {
-    if (parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight) {
-      contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
+    if (parseInt(responseDiv[i].style.height) != responseDiv[i].scrollHeight) {
+      responseDiv[i].style.height = responseDiv[i].scrollHeight + "px";
       toggles[i].style.color = "#844bf0";
       icons[i].classList.remove('ri-add-line');
       icons[i].classList.add('ri-subtract-line');
     }
     else {
-      contentDiv[i].style.height = "0px";
+      responseDiv[i].style.height = "0px";
       toggles[i].style.color = "#111130";
       icons[i].classList.remove('ri-subtract-line');
       icons[i].classList.add('ri-add-line');
     }
 
-    for (let j = 0; j < contentDiv.length; j++) {
+    for (let j = 0; j < responseDiv.length; j++) {
       if (j !== i) {
-        contentDiv[j].style.height = "0px";
+        responseDiv[j].style.height = "0px";
         toggles[j].style.color = "#111130";
         icons[j].classList.remove('ri-subtract-line');
         icons[j].classList.add('ri-add-line');

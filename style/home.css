@@ -84,3 +84,30 @@
   transform: translateY(-4px) scale(1.08);
 }
 
+
+/*RESPONSIVE*/
+
+
+@media (max-width: 1490px){
+  .home-img{
+    width:350px;
+  }
+}
+
+@media (max-width: 1180px){
+  .scroll-icon-box{
+    display: none;
+  }
+
+  .home-img{
+    display: none;
+  }
+
+}
+
+@media (max-width: 420px){
+  .s-home .btn{
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+}

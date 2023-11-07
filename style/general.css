@@ -1,44 +1,44 @@
-html[data-theme='dark']{
+html[data-theme='dark'] {
   --bg-color: #0B0C14;
   --text-color: #ffffff;
   --main-color: #30fe6c;
   --card-color: #171A2B;
   --border-color: #333b61;
   --hover-color: #7489FF;
-  --hovercard-color:#171A3C;
+  --hovercard-color: #171A3C;
   --verde-color: #30fe6c;
-  --btntxt-color:#000;
   --cinza-color: #b7bfcc;
   --p-color: #b7bfcc;
+  --btntxt-color: #000;
   --branco-color: #fff;
-  --contato-color:#0B0C14;
+  --contato-color: #121212;
   --inputhover-color: #171A2B;
-  --invert-1: invert(0);
+  --invert-1: invert(1);
   --invert-08: invert(0.8);
 
+
 }
-html[data-theme='light']{
+
+html[data-theme='light'] {
   --bg-color: #bebebe;
   --text-color: #000;
-  --text2-color: #844bf0;
-  --border-color: #ddd;
   --main-color: #844bf0;
-  --verde-color: #30fe6c;
-  --hover-color: #844bf0;
-  --hovercard-color:#ccc;
   --card-color: #bebebe;
+  --border-color: #ddd;
+  --hover-color: #844bf0;
+  --hovercard-color: #ccc;
+  --verde-color: #30fe6c;
   --cinza-color: #b7bfcc;
   --p-color: #000;
+  --btntxt-color: #fff;
   --branco-color: #fff;
-  --btntxt-color:#fff;
-  --service-color:#ccc;
-  --contato-color:#ddd;
+  --contato-color: #ddd;
+  --service-color: #ccc;
   --inputhover-color: #ccc;
-  --footer-color:#844bf0;
+  --footer-color: #844bf0;
   --invert-1: invert(1);
   --invert-08: invert(0);
 }
-
 
 * {
   padding: 0;
@@ -46,48 +46,47 @@ html[data-theme='light']{
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Mukta',Helvetica,Arial,Lucida,sans-serif;
+  font-family: 'Mukta', Helvetica, Arial, Lucida, sans-serif;
   scroll-behavior: smooth;
   transition: 0.3s;
 }
-:root{
+
+:root {
   --bg-color: #0B0C14;
   --text-color: #ffffff;
   --main-color: #30fe6c;
   --card-color: #171A2B;
   --border-color: #333b61;
   --hover-color: #7489FF;
-  --hovercard-color:#171A3C;
+  --hovercard-color: #171A3C;
   --verde-color: #30fe6c;
   --cinza-color: #b7bfcc;
   --p-color: #b7bfcc;
-  --btntxt-color:#000;
+  --btntxt-color: #000;
   --branco-color: #fff;
-
-  --contato-color:#121212;
+  --contato-color: #121212;
   --h1-font: 4.7rem;
-
   --invert-1: invert(1);
   --invert-08: invert(0.8);
 }
 
-body{
-  background-color: var(--bg-color);
-  color: var(--text-color)
-}
-
-#particles-js{
+#particles-js {
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: 1;
 }
 
-section{
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color)
+}
+
+section {
   padding: 100px 12%;
 }
 
-.btn{
+.btn {
   padding: 16px 30px;
   background-color: var(--main-color);
   color: var(--btntxt-color);
@@ -103,21 +102,20 @@ section{
   min-width: 300px;
 }
 
-.btn:hover{
+.btn:hover {
   border: 1px solid var(--main-color);
   box-shadow: 0 0 5px var(--main-color),
-  0 0 25px var(--main-color)
+    0 0 25px var(--main-color)
 }
 
-
-.title{
+.title {
   text-align: center;
-  margin-bottom: 4rem;  
+  margin-bottom: 4rem;
   font-size: 2.2em;
   font-style: italic;
 }
 
-.title::before{
+.title::before {
   content: '';
   position: absolute;
   left: 50%;
@@ -128,20 +126,21 @@ section{
   background-color: var(--main-color);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 15px;
 }
-::-webkit-scrollbar-track{
-  background-color: #333b61;
 
+::-webkit-scrollbar-track {
+  background-color: #333b61;
   border-radius: 3px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
   background-color: var(--hover-color);
   border-radius: 10px;
 }
 
-.btn-contato{
+.btn-contato {
   width: 120px;
   height: 40px;
   border: 0;
@@ -151,57 +150,68 @@ section{
   transition: .2s;
 }
 
-.btn-whatsapp{
+.btn-whatsapp {
   text-decoration: none;
   position: fixed;
-  bottom: 40px;
-  right: 60px;
+  bottom: 20px;
+  right: 30px;
   z-index: 1;
 }
 
-.btn-whatsapp img{
-  width: 65px;
-  height: 65px;
+.btn-whatsapp img {
+  width: 50px;
+  height: 50px;
   animation-name: btn-whatsapp;
-  animation: btn-whatsapp 5s ease-in-out  infinite;
+  animation: btn-whatsapp 5s ease-in-out infinite;
 }
 
-
-
 @keyframes btn-whatsapp {
-  4.5%, 10.5% {
+
+  4.5%,
+  10.5% {
     transform: translate(0px, 0px) rotate(0deg);
   }
+
   5% {
     transform: translate(1px, 1px) rotate(0deg);
   }
+
   5.5% {
     transform: translate(-1px, -2px) rotate(-1deg);
   }
+
   6% {
     transform: translate(-3px, 0px) rotate(1deg);
   }
+
   6.5% {
     transform: translate(3px, 2px) rotate(0deg);
   }
+
   7% {
     transform: translate(1px, -1px) rotate(1deg);
   }
+
   7.5% {
     transform: translate(-1px, 2px) rotate(-1deg);
   }
+
   8% {
     transform: translate(-3px, 1px) rotate(0deg);
   }
+
   8.5% {
     transform: translate(3px, 1px) rotate(-1deg);
   }
+
   9% {
     transform: translate(-1px, -1px) rotate(1deg);
   }
+
   9.5% {
     transform: translate(1px, 2px) rotate(0deg);
   }
+
   10% {
     transform: translate(1px, -2px) rotate(-1deg);
   }
@@ -209,102 +219,45 @@ section{
 
 /*RESPONSIVE*/
 @media (max-width: 1820px) {
-  header{
-    padding: 15px 7%;
-  }
-  section{
+  section {
     padding: 60px 7%;
   }
 }
 
-@media (max-width: 1610px){
-  :root{
+@media (max-width: 1610px) {
+  :root {
     --h1-font: 4.2rem
   }
-
 }
-@media (max-width: 1490px){
-  :root{
+
+@media (max-width: 1490px) {
+  :root {
     --h1-font: 3rem;
   }
 }
 
-@media (max-width: 1180px){
-  .scroll-icon-box{
-    display: none;
-  }
-
-  section{
+@media (max-width: 1180px) {
+  section {
     padding: 60px 7%;
   }
+}
 
-  .home-img{
-    display: none;
-  }
+@media (max-width: 950px) {
 
 }
 
-@media (max-width: 950px){
-  .navlist a{
-    margin: 0 15px;
-  }
-
-  header #menu-icon {
-    display: block;
-    font-size: 43px;
-  }
-
-  .navlist{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    padding: 80px 60px;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bg-color);
-    backdrop-filter: blur(5px);
-    transition: all 0.5s ease-in-out;
-  }
-  .navlist li a{
-    display: block;
-    padding: 0;
-    margin: 0px 0px 22px 0px;
-    font-size: 2rem;
-  }
-
-  .navlist.open{
-    left: 0;
-
-  }
-  
-}
-
-@media (max-width: 780px){
-  header{
-    padding: 13px 5%;
-  }
-  section{
+@media (max-width: 780px) {
+  section {
     padding: 50px 5%;
   }
 
-}
-
-@media (max-width: 530px){
-  :root{
-    --h1-font:2.3rem;
-  }
-  .h-right :nth-child(3){
-    display: none;
+  ::-webkit-scrollbar {
+    width: 3px;
   }
 }
 
-@media (max-width: 420px){
-  .s-home .btn{
-    font-size: 16px;
-    padding: 10px 5px;
+@media (max-width: 530px) {
+  :root {
+    --h1-font: 2.3rem;
   }
 }

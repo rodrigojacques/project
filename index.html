@@ -3,8 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description"
+    content="Marketing digital para alavancar o seu negócio, somos especializados em aumentar suas vendas e captar leads na internet" />
+  <meta name="keywords"
+    content="Agencia de marketing, anuncio online, anuncio no instagram, anuncio no facebook, anuncio no google, anuncio no youtube" />
+  <meta name="author" content="Rodrigo Jacques">
+  <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <title>Agência de Marketing</title>
   <link rel="stylesheet" href="style/general.css">
   <link rel="stylesheet" href="style/header.css">
   <link rel="stylesheet" href="style/home.css">
@@ -23,16 +29,15 @@
   <!---- google fonts link ---->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
+  <!---- scripts---->
   <script src="https://unpkg.com/scrollreveal" defer></script>
   <script src="js/script.js" defer></script>
   <script src="js/particles.js" defer></script>
   <script src="js/app.js" defer></script>
-
-
   <script defer>
-
     const changeThemeToDark = () => {
       document.documentElement.setAttribute('data-theme', 'dark');
       localStorage.setItem('data-theme', 'dark')
@@ -43,14 +48,14 @@
     }
     let theme = localStorage.getItem('data-theme')
     if (theme == 'light') changeThemeToLight
-
   </script>
 </head>
 
 <body>
   <div id="particles-js">
   </div>
-  <!--- header -->
+
+  <!-- header -->
   <header class="header">
     <a href="#" class="logo">
       <img src="" alt="">LOGO
@@ -60,7 +65,7 @@
       <li class="active"><a href="#home">Home</a></li>
       <li><a href="#service">O que fazemos?</a></li>
       <li><a href="#contato">Contato</a></li>
-      <li><a href="blog.html">blog</a></li>
+      <li><a href="#">blog</a></li>
     </ul>
 
     <div class="h-right">
@@ -73,16 +78,12 @@
       <a href="#contato">Fale conosco</a>
       <div class="bx bx-menu" id="menu-icon"></div>
     </div>
-    
+
   </header>
-  
 
-  <!--- home section --->
+  <!-- home section -->
   <section id="home" class="s-home">
-
-
-
-    <div class="left-box">
+    <div class="text-box">
       <div class="home-text delay-small">
         <span>
           Marketing Digital
@@ -91,16 +92,16 @@
           Alavanque seu negócio<br> com anúncios online
         </h1>
         <p>
-          No matter where you are, with a growing library of experience there is no limit.
+          Somos especializados em aumentar suas vendas e captar leads na internet
         </p>
       </div>
 
       <div class="link-box ">
         <div class="icones">
-          <a href="" class="small-delay"><i class="ri-facebook-box-line"></i></a>
-          <a href="" class="small-delay"><i class="ri-instagram-line"></i></a>
-          <a href="" class="small-delay"><i class="ri-tiktok-line"></i></a>
-          <a href="" class="small-delay"><i class="ri-youtube-line"></i></a>
+          <a href="https://www.facebook.com" target="_blank" class="small-delay"><i class="ri-facebook-box-line"></i></a>
+          <a href="https://www.instagram.com" target="_blank" class="small-delay"><i class="ri-instagram-line"></i></a>
+          <a href="https://www.tiktok.com" target="_blank" class="small-delay"><i class="ri-tiktok-line"></i></a>
+          <a href="https://www.youtube.com" target="_blank" class="small-delay"><i class="ri-youtube-line"></i></a>
         </div>
         <div class="delay-small">
           <a href="#contato"" class=" btn">Converse com um especialista</a>
@@ -108,9 +109,8 @@
       </div>
     </div>
 
-
     <div class="home-img delay-extra-big">
-      <img src="img/image.png" alt="">
+      <img src="img/image.png" alt="imagem de foguete">
     </div>
 
     <div class="scroll-icon-box delay-extra-big">
@@ -121,12 +121,11 @@
 
   </section>
 
-  <!--parceiros-->
+  <!--parceiros section-->
   <section id="parceiros" class="s-parceiros">
     <div class="parceiros-text">
       <h3 class="txt-animado">Anuncie sua empresa no <span></span></h3>
     </div>
-
 
     <div class="parceiros-box">
       <div class="parceiro">
@@ -138,12 +137,12 @@
     </div>
   </section>
 
-  <!--- service section--->
+  <!-- service section -->
   <section id="service" class="s-service">
 
     <h2 class="title delay-small">O que fazemos?
     </h2>
-    <div class="service-box">
+    <div class="container-service">
 
       <article class="card-box delay-extra-big">
         <div class="card-image"><img src="img/anuncio.png" alt=""></div>
@@ -168,7 +167,8 @@
         <div class="card-image"><img src="img/remarketing.png" alt=""></div>
         <div class="card-texto">
           <h3 class="title"><em>Remarketing</em></h3>
-          <p>Usando os dados de suas conversões, vamos mostrar os anúncios novamente para as pessoas que acessaram o site.
+          <p>Usando os dados de suas conversões, vamos mostrar os anúncios novamente para as pessoas que acessaram o
+            site.
             Também iremos encontrar pessoas interessadas em seus produtos no Facebook, Instagram, TikTok e
             todas as segmentações da plataforma do Google (Display, Youtube, Maps)</p>
         </div>
@@ -205,10 +205,10 @@
     <a class="btn" href="#contato">Faça um orçamento</a>
   </section>
 
-  <!---  contato section--->
+  <!-- contato section -->
   <section id="contato" class="s-contato">
 
-    <div class="form-box">
+    <div class="container-form">
       <h3 class="title">Contate-nos</h3>
       <form>
         <div class="row-input delay-small">
@@ -236,80 +236,67 @@
     </div>
   </section>
 
+  <!-- faq section -->
+  <section class="s-faq">
+    <h3 class="title">Perguntas frequentes</h3>
 
+    <div class="container-faq">
+      <div class="faq-cta">
+        <p>Caso ainda tenha duvidas fale conosco pelo whatsapp, temos especialistas prontos para lhe ajudar.</p>
+        <a><button class="btn">Whatsapp</button></a>
+      </div>
 
+      <div class="faq">
+        <div class="question">
+          <button class="toggle">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit?
+            <i class="faq-icon ri-add-line"></i>
+          </button>
+          <div class="response">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolore aliquid cum. Accusamus,
+              asperiores eligendi?</p>
+          </div>
+        </div>
+        <div class="question">
+          <button class="toggle">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit?
+            <i class="faq-icon ri-add-line"></i>
+          </button>
+          <div class="response">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolore aliquid cum. Accusamus,
+              asperiores eligendi?</p>
+          </div>
+        </div>
 
+        <div class="question">
+          <button class="toggle">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit?
+            <i class="faq-icon ri-add-line"></i>
+          </button>
+          <div class="response">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolore aliquid cum. Accusamus,
+              asperiores eligendi?</p>
+          </div>
+        </div>
 
+        <div class="question">
+          <button class="toggle">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit?
+            <i class="faq-icon ri-add-line"></i>
+          </button>
+          <div class="response">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolore aliquid cum. Accusamus,
+              asperiores eligendi?</p>
+          </div>
+        </div>
 
-  <!-- faq section-->
-<section class="s-faq">
-  <h3 class="title">Perguntas frequentes</h3>
-
-  <div class="container-faq">
-    <div class="faq-cta">
-      <p>Caso ainda tenha duvidas fale conosco pelo whatsapp, temos especialistas prontos para lhe ajudar.</p>
-      <a><button class="btn">Whatsapp</button></a>
+      </div>
     </div>
-    <div class="container">
-      <div class="wrapper">
-        <button class="toggle">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit?
-          <i class="faq-icon ri-add-line"></i>
-        </button>
-        <div class="content">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolore aliquid cum. Accusamus, asperiores eligendi?</p>
-        </div>
-      </div>
-      <div class="wrapper">
-        <button class="toggle">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit?
-          <i class="faq-icon ri-add-line"></i>
-        </button>
-        <div class="content">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolore aliquid cum. Accusamus, asperiores eligendi?</p>
-        </div>
-      </div>
-
-      <div class="wrapper">
-        <button class="toggle">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit?
-          <i class="faq-icon ri-add-line"></i>
-        </button>
-        <div class="content">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolore aliquid cum. Accusamus, asperiores eligendi?</p>
-        </div>
-      </div>
-
-      <div class="wrapper">
-        <button class="toggle">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit?
-          <i class="faq-icon ri-add-line"></i>
-        </button>
-        <div class="content">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolore aliquid cum. Accusamus, asperiores eligendi?</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
 
-</section>
+  </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!---  footer section--->
+  <!-- footer section -->
   <section id="footer" class="footer">
     <div class="footer-box">
       <a href="#" class="footer-logo"></a>
@@ -324,19 +311,16 @@
       </ul>
       <ul class="footer-icons">
         <li>
-          <i class="ri-google-fill"></i>
+          <a href="https://www.facebook.com" target="_blank"><i class="ri-facebook-box-fill"></i></a>
         </li>
         <li>
-          <i class="ri-facebook-box-fill"></i>
+          <a href="https://www.instagram.com" target="_blank"><i class="ri-instagram-fill"></i></a>
         </li>
         <li>
-          <i class="ri-instagram-fill"></i>
+          <a href="https://www.youtube.com" target="_blank"><i class="ri-youtube-fill"></i></a>
         </li>
         <li>
-          <i class="ri-youtube-fill"></i>
-        </li>
-        <li>
-          <i class="ri-tiktok-fill"></i>
+          <a href="https://www.tiktok.com" target="_blank"><i class="ri-tiktok-fill"></i></a>
         </li>
       </ul>
       <p>Copyright © 2023. Todos os direitos reservados.</p>
@@ -344,10 +328,10 @@
 
   </section>
 
-  <a href="https://api.whatsapp.com/send?phone=48123456789" width="70px" class="btn-whatsapp" target="_blank" title="Quero falar com o atendimento">
+  <a href="https://api.whatsapp.com/send?phone=48123456789" width="70px" class="btn-whatsapp" target="_blank"
+    title="Quero falar com o atendimento">
     <img src="img/btn-whatsapp.png" alt="whatsapp">
   </a>
-
 </body>
 
 </html>
