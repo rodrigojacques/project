@@ -19,7 +19,7 @@
 }
 
 .faq-cta {
-  width: 500px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   text-align: center;
