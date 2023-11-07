@@ -13,8 +13,8 @@
 }
 
 .home-img img{
-  width: 100%;
-  height: auto;
+  width: 450px;
+  height: 450px;
 
 }
 
@@ -91,6 +91,7 @@
 @media (max-width: 1490px){
   .home-img{
     width:350px;
+    height:350px;
   }
 }
 
