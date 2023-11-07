@@ -4,13 +4,14 @@
   right: 0;
   width: 100%;
   z-index: 1000;
-  padding: 40px 12%;
+  padding: 30px 12%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   transform: all ease .55s;
   backdrop-filter: blur(5px);
   transition: 0.5s;
+
 }
 
 .header.scroll{
@@ -88,7 +89,7 @@ header input[type="checkbox"]{
 header label{ 
   border:2px solid gray;
   border-radius:30px;
-  padding:10px;
+  padding:8px;
   margin: 0 50px;
   cursor:pointer;
 }
@@ -132,7 +133,7 @@ header label{
     margin: 0 15px;
   }
 
-  header #menu-icon {
+  .header #menu-icon {
     display: block;
     font-size: 43px;
   }
@@ -170,7 +171,20 @@ header label{
 }
 
 @media (max-width: 780px) {
-  header {
-    padding: 13px 5%;
+  .header {
+    padding: 20px 5%;
+    background-color: rgba(12, 12, 12, 0.2);
+  }
+
+  .header label{ 
+    padding: 10px;
+  }
+  
+  .ri-sun-fill{
+    font-size: 20px;
+  }
+  
+  .ri-moon-fill{
+    font-size: 20px;
   }
 }

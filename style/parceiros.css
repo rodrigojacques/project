@@ -9,9 +9,10 @@
 }
 
 
-.parceiros-text h3{
+.parceiros-text span{
   color: var(--p-color);
   font-size: 40px;
+  text-align: center;
 }
 
 .parceiros-box{
@@ -84,13 +85,13 @@
 
 /*RESPONSIVE*/
 @media (max-width: 1610px){
-  .parceiros-text h3{
+  .parceiros-text span{
     font-size: 35px;
   }
 }
 
 @media (max-width: 1490px){
-  .parceiros-text h3{
+  .parceiros-text span{
     font-size: 30px;
   }
 }
@@ -104,7 +105,7 @@
     font-size: 60px;
   }
 
-  .parceiros-text h3{
+  .parceiros-text span{
     font-size: 25px;
   }
 
@@ -132,7 +133,7 @@
 }
 
 @media (max-width: 540px){
-  .parceiros-text h3{
+  .parceiros-text span{
     font-size: 24px;
     text-align: center;
   }
