@@ -42,13 +42,14 @@
 }
 
 .card-image {
-  max-width: 75px;
-  max-height: 75px;
+  width: 75px;
+  height: 75px;
   margin-bottom: 20px;
 }
 
 .card-image img{
-  width: 100%;
+  width: 75px;
+  height: 75px;
   filter: var(--invert-08);
   transition: 0.5s;
 }
@@ -74,6 +75,10 @@
   .card-image{
     max-width: 70px;
     max-height: 70px;
-    margin-bottom: 20px;
+  }
+
+  .card-image img{
+    width: 70px;
+    height: 70px;
   }
 }
